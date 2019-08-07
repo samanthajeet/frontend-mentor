@@ -72,6 +72,7 @@ function Navigation(props) {
       <section className={location()} >
         <button onClick={() => goToPage("/")}>Home</button>
         <button onClick={() => goToPage("/signupform")}>Signup Form</button>
+        <button onClick={() => goToPage("/darktheme")}>Dark Theme landing page</button>
       </section>
     </Nav>
   );
