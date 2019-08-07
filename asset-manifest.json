@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/frontend-mentor/static/css/main.2624c16b.chunk.css",
+    "main.js": "/frontend-mentor/static/js/main.246c2162.chunk.js",
+    "main.js.map": "/frontend-mentor/static/js/main.246c2162.chunk.js.map",
+    "runtime~main.js": "/frontend-mentor/static/js/runtime~main.fc07fb3e.js",
+    "runtime~main.js.map": "/frontend-mentor/static/js/runtime~main.fc07fb3e.js.map",
+    "static/js/2.fcf97e68.chunk.js": "/frontend-mentor/static/js/2.fcf97e68.chunk.js",
+    "static/js/2.fcf97e68.chunk.js.map": "/frontend-mentor/static/js/2.fcf97e68.chunk.js.map",
+    "index.html": "/frontend-mentor/index.html",
+    "precache-manifest.e6c1699cd7d26d64f90d7cd3d610f864.js": "/frontend-mentor/precache-manifest.e6c1699cd7d26d64f90d7cd3d610f864.js",
+    "service-worker.js": "/frontend-mentor/service-worker.js",
+    "static/css/main.2624c16b.chunk.css.map": "/frontend-mentor/static/css/main.2624c16b.chunk.css.map",
+    "static/media/SignupForm.css": "/frontend-mentor/static/media/bg-intro-desktop.eb8c9c16.png"
+  }
+}
