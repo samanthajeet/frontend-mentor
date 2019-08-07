@@ -5,9 +5,7 @@ class LandingDark extends Component {
   render() { 
     return ( 
       <div>
-        <h1>
-          dark theme
-        </h1>
+        
       </div>
      );
   }
