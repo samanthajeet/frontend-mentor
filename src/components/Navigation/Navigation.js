@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 const Nav = styled.nav`
 
+  animation: fade-in 3s;
   .home {
     /* border: 1px solid red; */
     position: relative;
@@ -45,6 +46,12 @@ const Nav = styled.nav`
     color: #EE4540;
     transition: none;
   }
+
+
+  @keyframes fade-in {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
 `;
 
 function Navigation(props) {
