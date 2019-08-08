@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import bgCurvy from "../../images/landingpage-darktheme/bg-curvy-desktop.svg"
+import bgCurvy from "../../images/landingpage-darktheme/bg-curvy-desktop.svg";
 
 export const DarkLanding = styled.div`
   * {
@@ -21,19 +21,21 @@ export const DarkLanding = styled.div`
     font-size: 1.25rem;
   }
 
-  h1, h2, h5 {
+  h1,
+  h2,
+  h5 {
     font-family: "Raleway", sans-serif;
   }
 
-  h2{
-    font-size: 2.75rem;
+  h2 {
+    font-size: 3rem;
   }
 
-  h5{
+  h5 {
     font-weight: 700;
   }
 
-  h6{
+  h6 {
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 1.25rem;
@@ -41,6 +43,7 @@ export const DarkLanding = styled.div`
 
   p {
     font-family: "Open Sans", sans-serif;
+    font-size: 14px;
   }
 `;
 
@@ -86,7 +89,7 @@ export const Intro = styled.section`
     width: 100%;
   }
 
-  .intro-text{
+  .intro-text {
     /* border: 1px solid green; */
     display: flex;
     flex-direction: column;
@@ -97,16 +100,15 @@ export const Intro = styled.section`
     height: 20rem;
   }
 
-  .intro-text > h6{
+  .intro-text > h6 {
     width: 75%;
   }
 
-  #get-started{
+  #get-started {
     width: 50%;
     height: 4rem;
   }
 `;
-
 
 export const Services = styled.section`
   /* border: 1px solid white; */
@@ -116,7 +118,7 @@ export const Services = styled.section`
   flex-wrap: wrap;
   margin-top: 5rem;
 
-  .service{
+  .service {
     /* border: 1px solid red; */
     margin: 2rem;
     width: 25rem;
@@ -126,4 +128,43 @@ export const Services = styled.section`
     justify-content: space-between;
     align-items: center;
   }
-`
+`;
+
+export const StayProductive = styled.section`
+  /* border: 1px solid white; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40rem;
+  padding: 3rem;
+
+  .stayproductive-illustration {
+    /* border: 1px solid red; */
+    height: 100%;
+  }
+
+  .stayproductive-illustration > img {
+    object-fit: contain;
+    height: 100%;
+  }
+
+  .stayproductive-text {
+    /* border: 1px solid green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 65%;
+    width: 35%;
+    text-align: left;
+  }
+
+  .stayproductive-text > h2 {
+    /* border: 1px solid lightcyan; */
+    width: 75%;
+  }
+
+  .stayproductive-text > a {
+    color: hsl(176, 68%, 64%);
+  }
+`;

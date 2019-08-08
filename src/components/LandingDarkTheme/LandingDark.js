@@ -1,10 +1,17 @@
 import React, { Component } from "react";
-import { Header, DarkLanding, Intro, Services } from "./LandingDarkStyle";
+import {
+  Header,
+  DarkLanding,
+  Intro,
+  Services,
+  StayProductive
+} from "./LandingDarkStyle";
 import illustrationlogo from "../../images/landingpage-darktheme/illustration-intro.png";
 import accessAnywhere from "../../images/landingpage-darktheme/icon-access-anywhere.svg";
 import security from "../../images/landingpage-darktheme/icon-security.svg";
 import collaboration from "../../images/landingpage-darktheme/icon-collaboration.svg";
 import anyFile from "../../images/landingpage-darktheme/icon-any-file.svg";
+import stayProductive from "../../images/landingpage-darktheme/illustration-stay-productive.png";
 
 class LandingDark extends Component {
   state = {};
@@ -83,6 +90,23 @@ class LandingDark extends Component {
             </p>
           </div>
         </Services>
+        <StayProductive>
+          <figure className="stayproductive-illustration">
+            <img src={stayProductive} alt="" />
+          </figure>
+          <section className="stayproductive-text">
+            <h2>Stay productive, wherever you are</h2>
+            <p>
+              Never let location be an issue when accessing your files. Fylo has
+              you covered for all of your file storage needs.
+            </p>
+            <p>
+              Securely share files and folders with friends, family and
+              colleagues for live collaboration. No email attachments required.
+            </p>
+            <a href="">See how Aloha works</a>
+          </section>
+        </StayProductive>
       </DarkLanding>
     );
   }
