@@ -1,6 +1,10 @@
 import React, { Component } from "react";
-import { Header, DarkLanding, Intro } from "./LandingDarkStyle";
+import { Header, DarkLanding, Intro, Services } from "./LandingDarkStyle";
 import illustrationlogo from "../../images/landingpage-darktheme/illustration-intro.png";
+import accessAnywhere from "../../images/landingpage-darktheme/icon-access-anywhere.svg";
+import security from "../../images/landingpage-darktheme/icon-security.svg";
+import collaboration from "../../images/landingpage-darktheme/icon-collaboration.svg";
+import anyFile from "../../images/landingpage-darktheme/icon-any-file.svg";
 
 class LandingDark extends Component {
   state = {};
@@ -35,6 +39,50 @@ class LandingDark extends Component {
             <button id="get-started">Get Started</button>
           </div>
         </Intro>
+        <Services>
+          <div className="service">
+            <figure>
+              <img src={accessAnywhere} alt="" />
+            </figure>
+            <h5>Access your files, anywhere</h5>
+            <p>
+              The ability to use a smartphone, tablet, or computer to access
+              your account means your files follow you everywhere.
+            </p>
+          </div>
+          <div className="service">
+            <figure>
+              <img src={security} alt="" />
+            </figure>
+            <h5> Security you can trust</h5>
+            <p>
+              2-factor authentication and user-controlled encryption are just a
+              couple of the security features we allow to help secure your
+              files.
+            </p>
+          </div>
+          <div className="service">
+            <figure>
+              <img src={collaboration} alt="" />
+            </figure>
+            <h5>Real-time collaboration</h5>
+            <p>
+              Securely share files and folders with friends, family and
+              colleagues for live collaboration. No email attachments required.
+            </p>
+          </div>
+          <div className="service">
+            <figure>
+              <img src={anyFile} alt="" />
+            </figure>
+            <h5>Store any type of file</h5>
+            <p>
+              Whether you're sharing holidays photos or work documents, Fylo has
+              you covered allowing for all file types to be securely stored and
+              shared.
+            </p>
+          </div>
+        </Services>
       </DarkLanding>
     );
   }

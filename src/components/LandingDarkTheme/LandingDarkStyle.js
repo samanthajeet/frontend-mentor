@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import bgCurvy from "../../images/landingpage-darktheme/bg-curvy-desktop.svg"
 
 export const DarkLanding = styled.div`
   * {
@@ -10,6 +11,9 @@ export const DarkLanding = styled.div`
   background: hsl(218, 28%, 13%);
   min-height: 100vh;
   font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   button {
     background: none;
     border: none;
@@ -17,7 +21,7 @@ export const DarkLanding = styled.div`
     font-size: 1.25rem;
   }
 
-  h1, h2 {
+  h1, h2, h5 {
     font-family: "Raleway", sans-serif;
   }
 
@@ -25,10 +29,18 @@ export const DarkLanding = styled.div`
     font-size: 2.75rem;
   }
 
+  h5{
+    font-weight: 700;
+  }
+
   h6{
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 1.25rem;
+  }
+
+  p {
+    font-family: "Open Sans", sans-serif;
   }
 `;
 
@@ -39,6 +51,7 @@ export const Header = styled.header`
   align-items: center;
   padding: 0 3rem;
   background: hsl(217, 28%, 15%);
+  width: 100%;
 
   nav {
     /* border: 1px solid pink; */
@@ -49,15 +62,16 @@ export const Header = styled.header`
 `;
 
 export const Intro = styled.section`
-  border: 1px solid white;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: url(${bgCurvy});
   background: hsl(217, 28%, 15%);
 
   button {
     background: hsl(198, 60%, 50%);
-    border-radius: 10px;
+    border-radius: 25px;
     min-width: 10rem;
     min-height: 2rem;
   }
@@ -73,16 +87,17 @@ export const Intro = styled.section`
   }
 
   .intro-text{
-    border: 1px solid green;
+    /* border: 1px solid green; */
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     margin-top: 2rem;
     width: 40%;
+    height: 20rem;
   }
 
   .intro-text > h6{
-    margin-top: 2rem;
     width: 75%;
   }
 
@@ -91,3 +106,24 @@ export const Intro = styled.section`
     height: 4rem;
   }
 `;
+
+
+export const Services = styled.section`
+  /* border: 1px solid white; */
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+
+  .service{
+    /* border: 1px solid red; */
+    margin: 2rem;
+    width: 25rem;
+    height: 14rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+`
