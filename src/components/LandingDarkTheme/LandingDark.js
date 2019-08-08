@@ -4,7 +4,8 @@ import {
   DarkLanding,
   Intro,
   Services,
-  StayProductive
+  StayProductive,
+  Testimonials
 } from "./LandingDarkStyle";
 import illustrationlogo from "../../images/landingpage-darktheme/illustration-intro.png";
 import accessAnywhere from "../../images/landingpage-darktheme/icon-access-anywhere.svg";
@@ -107,6 +108,27 @@ class LandingDark extends Component {
             <a href="">See how Aloha works</a>
           </section>
         </StayProductive>
+        <Testimonials>
+          <section className="testimony">
+            <p>
+              Fylo has improved our team productivity by an order of magnitude.
+              Since making the switch our team has become a well-oiled
+              collaboration machine.
+            </p>
+            <section className="testimony-profile">
+              <figure className="testimony-profile-image">
+                <img
+                  src="https://cdn3-www.comingsoon.net/assets/uploads/2018/10/TinaFeyFeature-618x360.jpg"
+                  alt=""
+                />
+              </figure>
+              <section className="testimony-profile-text">
+                <h5>Tina Fey</h5>
+                <h6>Bosslady</h6>
+              </section>
+            </section>
+          </section>
+        </Testimonials>
       </DarkLanding>
     );
   }

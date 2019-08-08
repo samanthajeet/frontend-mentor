@@ -14,6 +14,12 @@ export const DarkLanding = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  img {
+    object-fit: contain;
+    height: 100%;
+  }
+
   button {
     background: none;
     border: none;
@@ -23,7 +29,8 @@ export const DarkLanding = styled.div`
 
   h1,
   h2,
-  h5 {
+  h5,
+  h6 {
     font-family: "Raleway", sans-serif;
   }
 
@@ -52,7 +59,7 @@ export const Header = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 3rem;
+  padding: 1rem 3rem;
   background: hsl(217, 28%, 15%);
   width: 100%;
 
@@ -166,5 +173,43 @@ export const StayProductive = styled.section`
 
   .stayproductive-text > a {
     color: hsl(176, 68%, 64%);
+  }
+`;
+
+export const Testimonials = styled.section`
+  border: 1px solid white;
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+
+  .testimony {
+    border: 1px solid cyan;
+    padding: 1.5rem;
+    text-align: left;
+    background: hsl(219, 30%, 18%);
+    width: 30%;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .testimony-profile {
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+  }
+
+  .testimony-profile-image {
+    height: 4rem;
+    width: 4rem;
+    margin-right: 1rem;
+  }
+
+  .testimony-profile-image > img {
+    border-radius: 50px;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
   }
 `;
