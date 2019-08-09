@@ -16,6 +16,8 @@ export const DarkLanding = styled.div`
   align-items: center;
   padding-bottom: 2rem;
 
+  animation: fade-in 4s;
+
   img {
     object-fit: contain;
     height: 100%;
@@ -54,11 +56,19 @@ export const DarkLanding = styled.div`
     font-size: 14px;
   }
 
-
   /* @media (min-width: 1200px) {
     background-color: lightblue;
   
 } */
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 `;
 
 export const Header = styled.header`
@@ -79,8 +89,7 @@ export const Header = styled.header`
 
   @media (min-width: 1200px) {
     padding: 1rem 10rem;
-  
-}
+  }
 `;
 
 export const Intro = styled.section`
@@ -129,17 +138,16 @@ export const Intro = styled.section`
   }
 
   @media (min-width: 1200px) {
-    .intro-illustration{
+    .intro-illustration {
       width: 30%;
       max-width: 50rem;
-    };
+    }
 
     button {
       max-width: 20rem;
       height: 3rem;
     }
-  
-}
+  }
 `;
 
 export const Services = styled.section`
@@ -164,8 +172,7 @@ export const Services = styled.section`
   @media (min-width: 1200px) {
     width: 70%;
     max-width: 70rem;
-  
-}
+  }
 `;
 
 export const StayProductive = styled.section`
@@ -215,12 +222,11 @@ export const Testimonials = styled.section`
   display: flex;
   justify-content: space-evenly;
 
-  #quote{
+  #quote {
     max-height: 3rem;
     position: absolute;
     z-index: 0;
-    left: 7rem;;
-
+    left: 7rem;
   }
 
   .testimony {
@@ -237,12 +243,12 @@ export const Testimonials = styled.section`
 
   .testimony h5 {
     font-size: 1.1rem;
-    letter-spacing: .1rem;
+    letter-spacing: 0.1rem;
   }
 
   .testimony h6 {
     font-size: 1rem;
-    letter-spacing: .05rem;
+    letter-spacing: 0.05rem;
   }
 
   .testimony-profile {
@@ -265,12 +271,9 @@ export const Testimonials = styled.section`
   }
 `;
 
-
 export const DarkFooter = styled.footer`
-width: 100%;
-padding: 1rem;
-padding-top: 8rem;
-  background: hsl(216, 53%, 9%)
-`
-
-
+  width: 100%;
+  padding: 1rem;
+  padding-top: 8rem;
+  background: hsl(216, 53%, 9%);
+`;
