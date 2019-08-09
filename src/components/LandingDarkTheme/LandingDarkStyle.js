@@ -55,10 +55,10 @@ export const DarkLanding = styled.div`
   }
 
 
-  @media (min-width: 1200px) {
+  /* @media (min-width: 1200px) {
     background-color: lightblue;
   
-}
+} */
 `;
 
 export const Header = styled.header`
@@ -143,7 +143,7 @@ export const Intro = styled.section`
 `;
 
 export const Services = styled.section`
-  border: 1px solid white;
+  /* border: 1px solid white; */
   width: 50%;
   display: flex;
   justify-content: center;
