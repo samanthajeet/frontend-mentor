@@ -14,6 +14,7 @@ export const DarkLanding = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 2rem;
 
   img {
     object-fit: contain;
@@ -177,25 +178,37 @@ export const StayProductive = styled.section`
 `;
 
 export const Testimonials = styled.section`
-  border: 1px solid white;
+  /* border: 1px solid white; */
   width: 100%;
   padding: 2rem;
+  margin: 8rem 0;
   display: flex;
+  justify-content: space-evenly;
 
   .testimony {
-    border: 1px solid cyan;
-    padding: 1.5rem;
+    /* border: 1px solid cyan; */
+    padding: 1.75rem;
     text-align: left;
     background: hsl(219, 30%, 18%);
-    width: 30%;
-    height: 15rem;
+    width: 25%;
+    height: 17rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
 
+  .testimony h5 {
+    font-size: 1.1rem;
+    letter-spacing: .1rem;
+  }
+
+  .testimony h6 {
+    font-size: 1rem;
+    letter-spacing: .05rem;
+  }
+
   .testimony-profile {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     align-items: center;
   }

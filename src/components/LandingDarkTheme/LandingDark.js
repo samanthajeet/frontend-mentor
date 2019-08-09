@@ -13,6 +13,7 @@ import security from "../../images/landingpage-darktheme/icon-security.svg";
 import collaboration from "../../images/landingpage-darktheme/icon-collaboration.svg";
 import anyFile from "../../images/landingpage-darktheme/icon-any-file.svg";
 import stayProductive from "../../images/landingpage-darktheme/illustration-stay-productive.png";
+import bigQuotes from "../../images/landingpage-darktheme/bg-quotes.png";
 
 class LandingDark extends Component {
   state = {};
@@ -105,10 +106,11 @@ class LandingDark extends Component {
               Securely share files and folders with friends, family and
               colleagues for live collaboration. No email attachments required.
             </p>
-            <a href="">See how Aloha works</a>
+            <a href="google.com">See how Aloha works</a>
           </section>
         </StayProductive>
         <Testimonials>
+          <img src={bigQuotes} alt="" id="quote"/>
           <section className="testimony">
             <p>
               Fylo has improved our team productivity by an order of magnitude.
@@ -125,6 +127,44 @@ class LandingDark extends Component {
               <section className="testimony-profile-text">
                 <h5>Tina Fey</h5>
                 <h6>Bosslady</h6>
+              </section>
+            </section>
+          </section>
+          <section className="testimony">
+            <p>
+              Fylo has improved our team productivity by an order of magnitude.
+              Since making the switch our team has become a well-oiled
+              collaboration machine.
+            </p>
+            <section className="testimony-profile">
+              <figure className="testimony-profile-image">
+                <img
+                  src="https://img.cinemablend.com/cb/c/6/6/2/6/7/c6626743608899b510147bd45ee5ad8084f48cd675e7769076a3ef1be34cb72f.jpg"
+                  alt=""
+                />
+              </figure>
+              <section className="testimony-profile-text">
+                <h5>Captain Raymond Holt</h5>
+                <h6>NYPD Captain</h6>
+              </section>
+            </section>
+          </section>
+          <section className="testimony">
+            <p>
+              Fylo has improved our team productivity by an order of magnitude.
+              Since making the switch our team has become a well-oiled
+              collaboration machine.
+            </p>
+            <section className="testimony-profile">
+              <figure className="testimony-profile-image">
+                <img
+                  src="https://www.thewrap.com/wp-content/uploads/2015/02/leslie-knope-parks-and-recreation-nbc.jpg"
+                  alt=""
+                />
+              </figure>
+              <section className="testimony-profile-text">
+                <h5>Leslie Knope</h5>
+                <h6>Regional Director of National Park Service </h6>
               </section>
             </section>
           </section>
