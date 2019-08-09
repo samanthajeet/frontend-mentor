@@ -53,6 +53,12 @@ export const DarkLanding = styled.div`
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
   }
+
+
+  @media (min-width: 1200px) {
+    background-color: lightblue;
+  
+}
 `;
 
 export const Header = styled.header`
@@ -70,6 +76,11 @@ export const Header = styled.header`
     display: flex;
     justify-content: space-between;
   }
+
+  @media (min-width: 1200px) {
+    padding: 1rem 10rem;
+  
+}
 `;
 
 export const Intro = styled.section`
@@ -116,10 +127,23 @@ export const Intro = styled.section`
     width: 50%;
     height: 4rem;
   }
+
+  @media (min-width: 1200px) {
+    .intro-illustration{
+      width: 30%;
+      max-width: 50rem;
+    };
+
+    button {
+      max-width: 20rem;
+      height: 3rem;
+    }
+  
+}
 `;
 
 export const Services = styled.section`
-  /* border: 1px solid white; */
+  border: 1px solid white;
   width: 50%;
   display: flex;
   justify-content: center;
@@ -136,6 +160,12 @@ export const Services = styled.section`
     justify-content: space-between;
     align-items: center;
   }
+
+  @media (min-width: 1200px) {
+    width: 70%;
+    max-width: 70rem;
+  
+}
 `;
 
 export const StayProductive = styled.section`
@@ -185,13 +215,21 @@ export const Testimonials = styled.section`
   display: flex;
   justify-content: space-evenly;
 
+  #quote{
+    max-height: 3rem;
+    position: absolute;
+    z-index: 0;
+    left: 7rem;;
+
+  }
+
   .testimony {
     /* border: 1px solid cyan; */
-    padding: 1.75rem;
+    padding: 2.25rem;
     text-align: left;
     background: hsl(219, 30%, 18%);
     width: 25%;
-    height: 17rem;
+    height: 15rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -214,8 +252,8 @@ export const Testimonials = styled.section`
   }
 
   .testimony-profile-image {
-    height: 4rem;
-    width: 4rem;
+    height: 3.5rem;
+    width: 3.5rem;
     margin-right: 1rem;
   }
 
@@ -226,3 +264,13 @@ export const Testimonials = styled.section`
     width: 100%;
   }
 `;
+
+
+export const DarkFooter = styled.footer`
+width: 100%;
+padding: 1rem;
+padding-top: 8rem;
+  background: hsl(216, 53%, 9%)
+`
+
+

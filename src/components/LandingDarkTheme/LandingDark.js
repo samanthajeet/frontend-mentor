@@ -5,7 +5,8 @@ import {
   Intro,
   Services,
   StayProductive,
-  Testimonials
+  Testimonials,
+  DarkFooter
 } from "./LandingDarkStyle";
 import illustrationlogo from "../../images/landingpage-darktheme/illustration-intro.png";
 import accessAnywhere from "../../images/landingpage-darktheme/icon-access-anywhere.svg";
@@ -113,28 +114,24 @@ class LandingDark extends Component {
           <img src={bigQuotes} alt="" id="quote"/>
           <section className="testimony">
             <p>
-              Fylo has improved our team productivity by an order of magnitude.
-              Since making the switch our team has become a well-oiled
-              collaboration machine.
+            There ain't no party like a Liz Lemon party 'cause a Liz Lemon party is mandatory!
             </p>
             <section className="testimony-profile">
               <figure className="testimony-profile-image">
                 <img
-                  src="https://cdn3-www.comingsoon.net/assets/uploads/2018/10/TinaFeyFeature-618x360.jpg"
+                  src="https://thoughtcatalog.files.wordpress.com/2014/03/30rock_3l.jpg?w=584&h=387"
                   alt=""
                 />
               </figure>
               <section className="testimony-profile-text">
-                <h5>Tina Fey</h5>
+                <h5>Liz Lemon</h5>
                 <h6>Bosslady</h6>
               </section>
             </section>
           </section>
           <section className="testimony">
             <p>
-              Fylo has improved our team productivity by an order of magnitude.
-              Since making the switch our team has become a well-oiled
-              collaboration machine.
+            No need. I brought these. Nutrition bricks. I have original no flavor, and whole wheat no flavor.
             </p>
             <section className="testimony-profile">
               <figure className="testimony-profile-image">
@@ -151,9 +148,7 @@ class LandingDark extends Component {
           </section>
           <section className="testimony">
             <p>
-              Fylo has improved our team productivity by an order of magnitude.
-              Since making the switch our team has become a well-oiled
-              collaboration machine.
+            There is nothing we can't do if we work hard, never sleep, and shirk all other responsibilities in our lives.
             </p>
             <section className="testimony-profile">
               <figure className="testimony-profile-image">
@@ -169,6 +164,9 @@ class LandingDark extends Component {
             </section>
           </section>
         </Testimonials>
+        <DarkFooter>
+          {/* <h1>Aloha</h1> */}
+        </DarkFooter>
       </DarkLanding>
     );
   }
