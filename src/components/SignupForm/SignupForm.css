@@ -6,7 +6,7 @@
   font-family: "Poppins", sans-serif;
 }
 
-h1 {
+.left > h1 {
   font-size: 4rem;
   font-weight: 700;
   line-height: 4.5rem;
@@ -17,7 +17,7 @@ h5 {
   font-weight: 400;
 }
 
-main {
+.signup-main {
   background: url("../../images/signup-form/bg-intro-desktop.png");
   background-color: hsl(0, 100%, 74%);
   height: 100vh;

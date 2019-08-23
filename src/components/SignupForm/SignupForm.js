@@ -23,7 +23,7 @@ class SignUpForm extends Component {
 
   render() {
     return (
-      <main>
+      <main className="signup-main">
         <section className="left">
           <h1>Learn to code by watching others</h1>
           <h5>
