@@ -1,0 +1,30 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.todo {
+  border: 1px solid red;
+  height: 100vh;
+  background: url('../../images/todo/bg-desktop-dark.jpg') no-repeat fixed;
+  background-color: hsl(235, 24%, 19%);
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+
+
+  .add-todo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .empty-circle {
+    border: 1px solid white;
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+  }
+
+}
+
